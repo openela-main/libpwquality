@@ -1,0 +1,23 @@
+diff -up libpwquality-1.4.4/po/ja.po.nodot libpwquality-1.4.4/po/ja.po
+--- libpwquality-1.4.4/po/ja.po.nodot	2022-08-30 14:32:17.009800325 +0200
++++ libpwquality-1.4.4/po/ja.po	2022-08-30 14:32:29.162910025 +0200
+@@ -212,7 +212,7 @@ msgstr "パスワードの生成に失�
+ 
+ #: src/error.c:114 src/error.c:117
+ msgid "The password fails the dictionary check"
+-msgstr "このパスワードは辞書チェックに失敗しました。"
++msgstr "このパスワードは辞書チェックに失敗しました"
+ 
+ #: src/error.c:120 src/error.c:124
+ msgid "Unknown setting"
+diff -up libpwquality-1.4.4/po/Makefile.in.in.rhel9-i18n libpwquality-1.4.4/po/Makefile.in.in
+--- libpwquality-1.4.4/po/Makefile.in.in.rhel9-i18n	2021-08-04 16:36:32.050503801 +0200
++++ libpwquality-1.4.4/po/Makefile.in.in	2021-08-04 16:37:17.722885954 +0200
+@@ -97,6 +97,7 @@ CATALOGS = @CATALOGS@
+ 
+ 
+ all: all-@USE_NLS@
++	$(MAKE) *.gmo
+ 
+ all-yes: stamp-po
+ all-no:
