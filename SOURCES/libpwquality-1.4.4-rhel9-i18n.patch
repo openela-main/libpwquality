@@ -1,0 +1,583 @@
+diff -up libpwquality-1.4.4/po/de.po.rhel9-i18n libpwquality-1.4.4/po/de.po
+--- libpwquality-1.4.4/po/de.po.rhel9-i18n	2020-10-13 08:32:16.000000000 +0200
++++ libpwquality-1.4.4/po/de.po	2021-08-04 16:36:06.991294123 +0200
+@@ -3,23 +3,25 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ #
+ # Translators:
+-#   <hpeters@redhat.com>, 2012.
++# <hpeters@redhat.com>, 2012.
+ # Roman Spirgi <bigant@fedoraproject.org>, 2012.
+ # Tomáš Mráz <tmraz@fedoraproject.org>, 2017. #zanata
++# Christian Horn <chorn@fluxcoil.net>, 2021.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+ "Report-Msgid-Bugs-To: http://fedorahosted.org/libpwquality\n"
+ "POT-Creation-Date: 2020-10-13 08:32+0200\n"
+-"PO-Revision-Date: 2017-05-26 08:59+0000\n"
+-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+-"Language-Team: LANGUAGE <LL@li.org>\n"
++"PO-Revision-Date: 2021-05-21 22:56+0000\n"
++"Last-Translator: Christian Horn <chorn@fluxcoil.net>\n"
++"Language-Team: German <https://translate.fedoraproject.org/projects/"
++"libpwquality/app/de/>\n"
+ "Language: de\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+-"X-Generator: Zanata 4.6.2\n"
++"Plural-Forms: nplurals=2; plural=n != 1;\n"
++"X-Generator: Weblate 4.6.2\n"
+ 
+ #: src/pam_pwquality.c:236
+ #, c-format
+@@ -211,7 +213,7 @@ msgstr ""
+ 
+ #: src/error.c:114 src/error.c:117
+ msgid "The password fails the dictionary check"
+-msgstr "Passwort scheitert beim Wörterbuchtest"
++msgstr "Passwort besteht den Wörterbuchtest nicht."
+ 
+ #: src/error.c:120 src/error.c:124
+ msgid "Unknown setting"
+diff -up libpwquality-1.4.4/po/fr.po.rhel9-i18n libpwquality-1.4.4/po/fr.po
+--- libpwquality-1.4.4/po/fr.po.rhel9-i18n	2020-10-13 08:32:16.000000000 +0200
++++ libpwquality-1.4.4/po/fr.po	2021-08-04 16:36:06.992294131 +0200
+@@ -16,16 +16,16 @@ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+ "Report-Msgid-Bugs-To: http://fedorahosted.org/libpwquality\n"
+ "POT-Creation-Date: 2020-10-13 08:32+0200\n"
+-"PO-Revision-Date: 2020-02-08 07:16+0000\n"
++"PO-Revision-Date: 2020-10-17 07:15+0000\n"
+ "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
+-"Language-Team: French <https://translate.stg.fedoraproject.org/projects/"
++"Language-Team: French <https://translate.fedoraproject.org/projects/"
+ "libpwquality/app/fr/>\n"
+ "Language: fr\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "Plural-Forms: nplurals=2; plural=n > 1;\n"
+-"X-Generator: Weblate 3.10.3\n"
++"X-Generator: Weblate 4.3\n"
+ 
+ #: src/pam_pwquality.c:236
+ #, c-format
+@@ -73,6 +73,8 @@ msgstr "Usage : %s <entropy-bits>\n"
+ msgid ""
+ "Warning: Value %ld is outside of the allowed entropy range, adjusting it.\n"
+ msgstr ""
++"Avertissement : La valeur %ld est en dehors de la plage d’entropie "
++"autorisée, il faut l’ajuster.\n"
+ 
+ #: src/error.c:31
+ msgid "Memory allocation error when setting"
+diff -up libpwquality-1.4.4/po/ja.po.rhel9-i18n libpwquality-1.4.4/po/ja.po
+--- libpwquality-1.4.4/po/ja.po.rhel9-i18n	2020-10-13 08:32:16.000000000 +0200
++++ libpwquality-1.4.4/po/ja.po	2021-08-04 16:36:06.992294131 +0200
+@@ -9,13 +9,14 @@
+ # Tomoyuki KATO <tomo@dream.daynight.jp>, 2012.
+ # Tomáš Mráz <tmraz@fedoraproject.org>, 2017. #zanata
+ # yoshifumi kinoshita <yoshifumi1975@gmail.com>, 2020.
++# Ludek Janda <ljanda@redhat.com>, 2021.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+ "Report-Msgid-Bugs-To: http://fedorahosted.org/libpwquality\n"
+ "POT-Creation-Date: 2020-10-13 08:32+0200\n"
+-"PO-Revision-Date: 2020-07-05 10:53+0000\n"
+-"Last-Translator: yoshifumi kinoshita <yoshifumi1975@gmail.com>\n"
++"PO-Revision-Date: 2021-05-26 14:02+0000\n"
++"Last-Translator: Ludek Janda <ljanda@redhat.com>\n"
+ "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
+ "libpwquality/app/ja/>\n"
+ "Language: ja\n"
+@@ -23,23 +24,23 @@ msgstr ""
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "Plural-Forms: nplurals=1; plural=0;\n"
+-"X-Generator: Weblate 4.1.1\n"
++"X-Generator: Weblate 4.6.2\n"
+ 
+ #: src/pam_pwquality.c:236
+ #, c-format
+ msgid "BAD PASSWORD: %s"
+-msgstr "よくないパスワード: %s"
++msgstr "正しくないパスワード: %s"
+ 
+ #: src/pwscore.c:22
+ #, c-format
+ msgid "Usage: %s [user]\n"
+-msgstr "使い方: %s [user]\n"
++msgstr "例: %s [user]\n"
+ 
+ #: src/pwscore.c:23
+ #, c-format
+ msgid ""
+ "       The command reads the password to be scored from the standard input.\n"
+-msgstr "       このコマンドは採点するパスワードを標準入力から読み込みます。\n"
++msgstr "       このコマンドは、評価するパスワードを標準入力から読み込みます。\n"
+ 
+ #: src/pwscore.c:53 src/pwscore.c:61 src/pwscore.c:67
+ #, c-format
+@@ -48,7 +49,7 @@ msgstr "エラー: %s\n"
+ 
+ #: src/pwscore.c:53
+ msgid "Could not obtain the password to be scored"
+-msgstr "採点するパスワードを取得できませんでした。"
++msgstr "評価するパスワードを取得できませんでした"
+ 
+ #: src/pwscore.c:75
+ #, c-format
+@@ -56,23 +57,23 @@ msgid ""
+ "Password quality check failed:\n"
+ " %s\n"
+ msgstr ""
+-"パスワードの品質チェックに失敗しました。\n"
++"パスワードの評価チェックに失敗しました:\n"
+ " %s\n"
+ 
+ #: src/pwmake.c:23
+ #, c-format
+ msgid "Usage: %s <entropy-bits>\n"
+-msgstr "使い方: %s <エントロピーのビット数>\n"
++msgstr "例: %s <entropy-bits>\n"
+ 
+ #: src/pwmake.c:58
+ #, c-format
+ msgid ""
+ "Warning: Value %ld is outside of the allowed entropy range, adjusting it.\n"
+-msgstr ""
++msgstr "警告: 値 %ld は許可されるエントロピー範囲を超えていまで調整します。\n"
+ 
+ #: src/error.c:31
+ msgid "Memory allocation error when setting"
+-msgstr "設定中にメモリー割り当てエラーが発生しました。"
++msgstr "設定中にメモリー割り当てエラーが発生しました"
+ 
+ #: src/error.c:35
+ msgid "Memory allocation error"
+@@ -80,139 +81,135 @@ msgstr "メモリー割り当てエラ�
+ 
+ #: src/error.c:37
+ msgid "The password is the same as the old one"
+-msgstr "このパスワードは過去に設定されたものと同じです。"
++msgstr "このパスワードは過去に設定されたものと同じです"
+ 
+ #: src/error.c:39
+ msgid "The password is a palindrome"
+-msgstr "このパスワードは回文です。"
++msgstr "このパスワードは回文です"
+ 
+ #: src/error.c:41
+ msgid "The password differs with case changes only"
+-msgstr "このパスワードは大文字と小文字を変更しただけです。"
++msgstr "このパスワードは大文字と小文字を変更しただけです"
+ 
+ #: src/error.c:43
+ msgid "The password is too similar to the old one"
+-msgstr "このパスワードは古いパスワードと似すぎています。"
++msgstr "このパスワードは古いパスワードと類似しています"
+ 
+ #: src/error.c:45
+ msgid "The password contains the user name in some form"
+-msgstr "このパスワードには一部に何らかの形でユーザー名が含まれています。"
++msgstr "このパスワードには、一部に何らかの形でユーザー名が含まれています"
+ 
+ #: src/error.c:47
+ msgid "The password contains words from the real name of the user in some form"
+-msgstr ""
+-"このパスワードには何らかの形でユーザーの本名から基づく単語が含まれています。"
++msgstr "このパスワードには、何らかの形でユーザーの本名に基づく単語が含まれています"
+ 
+ #: src/error.c:49
+ msgid "The password contains forbidden words in some form"
+-msgstr "このパスワードには何らかの形で禁止された単語が含まれています。"
++msgstr "このパスワードには、何らかの形で禁止されている単語が含まれています"
+ 
+ #: src/error.c:52
+ #, c-format
+ msgid "The password contains less than %ld digits"
+-msgstr "このパスワードには %ld 個未満の数字が含まれています。"
++msgstr "このパスワードには %ld 個未満の数字が含まれています"
+ 
+ #: src/error.c:55
+ msgid "The password contains too few digits"
+-msgstr "このパスワードは数字の個数が足りません。"
++msgstr "このパスワードには、数字の個数が足りません"
+ 
+ #: src/error.c:58
+ #, c-format
+ msgid "The password contains less than %ld uppercase letters"
+-msgstr ""
+-"このパスワードには %ld 個未満の大文字のアルファベットが含まれています。"
++msgstr "このパスワードには %ld 個未満の大文字のアルファベットが含まれています"
+ 
+ #: src/error.c:61
+ msgid "The password contains too few uppercase letters"
+-msgstr "このパスワードは大文字のアルファベットの個数が足りません。"
++msgstr "このパスワードは、大文字のアルファベットの個数が足りません"
+ 
+ #: src/error.c:64
+ #, c-format
+ msgid "The password contains less than %ld lowercase letters"
+-msgstr ""
+-"このパスワードには %ld 個未満の小文字のアルファベットが含まれています。"
++msgstr "このパスワードに含まれる小文字のアルファベットは、%ld 個未満です"
+ 
+ #: src/error.c:67
+ msgid "The password contains too few lowercase letters"
+-msgstr "このパスワードは小文字のアルファベットの個数が足りません。"
++msgstr "このパスワードの小文字のアルファベット数が足りません"
+ 
+ #: src/error.c:70
+ #, c-format
+ msgid "The password contains less than %ld non-alphanumeric characters"
+-msgstr "このパスワードには %ld 個未満の記号が含まれています。"
++msgstr "このパスワードのに含まれるアルファベット以外の文字数は %ld 個未満です"
+ 
+ #: src/error.c:73
+ msgid "The password contains too few non-alphanumeric characters"
+-msgstr "このパスワードは記号の個数が足りません。"
++msgstr "このパスワードは、アルファベット以外の文字数が足りません"
+ 
+ #: src/error.c:76
+ #, c-format
+ msgid "The password is shorter than %ld characters"
+-msgstr "このパスワードは %ld 文字未満の文字列です。"
++msgstr "このパスワードは %ld 文字未満の文字列です"
+ 
+ #: src/error.c:79
+ msgid "The password is too short"
+-msgstr "このパスワードは短かすぎます。"
++msgstr "このパスワードは短かすぎます"
+ 
+ #: src/error.c:81
+ msgid "The password is just rotated old one"
+-msgstr "このパスワードは単に古いものを回転させただけです。"
++msgstr "このパスワードは、単に古いものを再利用しています"
+ 
+ #: src/error.c:84
+ #, c-format
+ msgid "The password contains less than %ld character classes"
+-msgstr "このパスワードは %ld 種類未満の文字の種類が含まれています。"
++msgstr "このパスワードの文字クラスは、%ld 種類未満です"
+ 
+ #: src/error.c:87
+ msgid "The password does not contain enough character classes"
+-msgstr "このパスワードに含まれる文字の種類数が足りません。"
++msgstr "このパスワードに含まれる文字クラス数が足りません"
+ 
+ #: src/error.c:90
+ #, c-format
+ msgid "The password contains more than %ld same characters consecutively"
+-msgstr "このパスワードは %ld 個を越える連続する同じ文字が含まれています。"
++msgstr "このパスワードはには、%ld 個を越える連続する同じ文字が含まれています"
+ 
+ #: src/error.c:93
+ msgid "The password contains too many same characters consecutively"
+-msgstr "このパスワードには連続して同じ文字が含まれています。"
++msgstr "このパスワードの連続した同じ文字の数が多すぎます"
+ 
+ #: src/error.c:96
+ #, c-format
+ msgid ""
+ "The password contains more than %ld characters of the same class "
+ "consecutively"
+-msgstr ""
+-"このパスワードは %ld 個を越える連続する同じ種類の文字が含まれています。"
++msgstr "このパスワードには %ld 個を越える連続する同じ文字クラスの文字が含まれています"
+ 
+ #: src/error.c:99
+ msgid ""
+ "The password contains too many characters of the same class consecutively"
+-msgstr "このパスワードには連続して同じ種類の文字が含まれています。"
++msgstr "このパスワードは、同じ文字クラス文字の連続が多すぎます"
+ 
+ #: src/error.c:102
+ #, c-format
+ msgid "The password contains monotonic sequence longer than %ld characters"
+-msgstr "このパスワードには %ld 文字より長い単調な文字列が含まれています。"
++msgstr "このパスワードには %ld 文字より長い単調な文字列が含まれています"
+ 
+ #: src/error.c:105
+ msgid "The password contains too long of a monotonic character sequence"
+-msgstr "このパスワードには長すぎる単調な文字列が含まれています。"
++msgstr "このパスワードには、長すぎる単調な文字列が含まれています"
+ 
+ #: src/error.c:107
+ msgid "No password supplied"
+-msgstr "パスワードが与えられていません。"
++msgstr "パスワードが与えられていません"
+ 
+ #: src/error.c:109
+ msgid "Cannot obtain random numbers from the RNG device"
+-msgstr "RNG(乱数発生)デバイスから乱数を取得することができません。"
++msgstr "RNG (乱数発生) デバイスから乱数を取得することができません"
+ 
+ #: src/error.c:111
+ msgid "Password generation failed - required entropy too low for settings"
+-msgstr "パスワードの生成に失敗 - 設定に必要なエントロピーが小さすぎます。"
++msgstr "パスワードの生成に失敗: 設定に必要なエントロピーが小さすぎます"
+ 
+ #: src/error.c:114 src/error.c:117
+ msgid "The password fails the dictionary check"
+-msgstr "このパスワードは辞書チェックに失敗しました。"
++msgstr "このパスワードは辞書チェックに失敗しました"
+ 
+ #: src/error.c:120 src/error.c:124
+ msgid "Unknown setting"
+@@ -220,41 +217,41 @@ msgstr "未知の設定"
+ 
+ #: src/error.c:127
+ msgid "Bad integer value of setting"
+-msgstr "設定の良くない整数型の値です。"
++msgstr "設定の正しくない整数型の値です"
+ 
+ #: src/error.c:131
+ msgid "Bad integer value"
+-msgstr "良くない整数型の値です。"
++msgstr "正しくない整数型の値です"
+ 
+ #: src/error.c:134
+ #, c-format
+ msgid "Setting %s is not of integer type"
+-msgstr "設定 %s は整数型ではありません。"
++msgstr "設定 %s は整数型ではありません"
+ 
+ #: src/error.c:138
+ msgid "Setting is not of integer type"
+-msgstr "設定は整数型ではありません。"
++msgstr "設定は整数型ではありません"
+ 
+ #: src/error.c:141
+ #, c-format
+ msgid "Setting %s is not of string type"
+-msgstr "設定 %s は文字列型ではありません。"
++msgstr "設定 %s は文字列型ではありません"
+ 
+ #: src/error.c:145
+ msgid "Setting is not of string type"
+-msgstr "設定は文字列型ではありません。"
++msgstr "設定は文字列型ではありません"
+ 
+ #: src/error.c:147
+ msgid "Opening the configuration file failed"
+-msgstr "設定ファイルを開けません。"
++msgstr "設定ファイルを開けませんでした"
+ 
+ #: src/error.c:149
+ msgid "The configuration file is malformed"
+-msgstr "設定ファイルの形式が正しくありません。"
++msgstr "設定ファイルの形式が正しくありません"
+ 
+ #: src/error.c:151
+ msgid "Fatal failure"
+-msgstr "致命的な障害が発生しました。"
++msgstr "致命的な障害が発生しました"
+ 
+ #: src/error.c:153
+ msgid "Unknown error"
+diff -up libpwquality-1.4.4/po/ko.po.rhel9-i18n libpwquality-1.4.4/po/ko.po
+--- libpwquality-1.4.4/po/ko.po.rhel9-i18n	2020-10-13 08:32:16.000000000 +0200
++++ libpwquality-1.4.4/po/ko.po	2021-08-04 16:36:06.992294131 +0200
+@@ -5,21 +5,23 @@
+ # Translators:
+ # eukim <eukim@redhat.com>, 2007,2009
+ # Tomáš Mráz <tmraz@fedoraproject.org>, 2017. #zanata
++# simmon <simmon@nplob.com>, 2021.
++# Seong-ho Cho <darkcircle.0426@gmail.com>, 2021.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PWQuality library\n"
+ "Report-Msgid-Bugs-To: http://fedorahosted.org/libpwquality\n"
+ "POT-Creation-Date: 2020-10-13 08:32+0200\n"
+-"PO-Revision-Date: 2017-05-26 09:01+0000\n"
+-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+-"Language-Team: Korean (http://www.transifex.com/projects/p/libpwquality/"
+-"language/ko/)\n"
++"PO-Revision-Date: 2021-07-22 07:04+0000\n"
++"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
++"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
++"libpwquality/app/ko/>\n"
+ "Language: ko\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "Plural-Forms: nplurals=1; plural=0;\n"
+-"X-Generator: Zanata 4.6.2\n"
++"X-Generator: Weblate 4.7.2\n"
+ 
+ #: src/pam_pwquality.c:236
+ #, c-format
+@@ -64,7 +66,7 @@ msgstr "사용법: %s <entropy-bits>\n"
+ #, c-format
+ msgid ""
+ "Warning: Value %ld is outside of the allowed entropy range, adjusting it.\n"
+-msgstr ""
++msgstr "경고: 값 %ld는 엔트로피 허용 범위를 초과하였습니다, 다시 조정해 주세요.\n"
+ 
+ #: src/error.c:31
+ msgid "Memory allocation error when setting"
+@@ -92,7 +94,7 @@ msgstr "암호가 이전 암호와 너�
+ 
+ #: src/error.c:45
+ msgid "The password contains the user name in some form"
+-msgstr "암호에 어떤 형식으로 사용자 이름이 포함되어 있습니다 "
++msgstr "암호에 사용자 이름이 들어 있습니다"
+ 
+ #: src/error.c:47
+ msgid "The password contains words from the real name of the user in some form"
+@@ -155,11 +157,11 @@ msgstr "암호가 이전 암호를 회�
+ #: src/error.c:84
+ #, c-format
+ msgid "The password contains less than %ld character classes"
+-msgstr "암호에는 %ld 미만의 문자 클래스가 포함되어 있습니다"
++msgstr "암호에 %ld 미만의 문자 계열이 들어있습니다"
+ 
+ #: src/error.c:87
+ msgid "The password does not contain enough character classes"
+-msgstr "암호에는 충분한 문자 클래스가 포함되어 있지 않습니다"
++msgstr "암호에 다양한 문자 계열을 반영하지 않았습니다"
+ 
+ #: src/error.c:90
+ #, c-format
+@@ -175,22 +177,21 @@ msgstr "암호에는 너무 많은 동�
+ msgid ""
+ "The password contains more than %ld characters of the same class "
+ "consecutively"
+-msgstr ""
+-"암호에는 %ld개 이상의 동일한 클래스 문자가 연속적으로 포함되어 있습니다"
++msgstr "암호에 %ld개 이상의 동일한 계열 문자가 연속으로 들어있습니다"
+ 
+ #: src/error.c:99
+ msgid ""
+ "The password contains too many characters of the same class consecutively"
+-msgstr "암호에는 너무 많은 동일한 클래스 문자가 연속적으로 포함되어 있습니다"
++msgstr "암호에 동일한 계열 문자가 너무 많이 있습니다"
+ 
+ #: src/error.c:102
+ #, c-format
+ msgid "The password contains monotonic sequence longer than %ld characters"
+-msgstr "암호에 %ld자를 초과하는 단조로운 문자열이 포함되어 있습니다."
++msgstr "암호에 %ld자를 초과하는 단조로운 문자열이 포함되어 있습니다"
+ 
+ #: src/error.c:105
+ msgid "The password contains too long of a monotonic character sequence"
+-msgstr "암호에 너무 단조로운 문자열이 포함되어 있습니다."
++msgstr "암호에 너무 단조로운 문자열이 있습니다"
+ 
+ #: src/error.c:107
+ msgid "No password supplied"
+@@ -202,49 +203,49 @@ msgstr "RNG 장치에서 임의의 숫�
+ 
+ #: src/error.c:111
+ msgid "Password generation failed - required entropy too low for settings"
+-msgstr "암호 생성에 실패했습니다 - 설정에 필요한 엔트로피가 너무 작습니다 "
++msgstr "암호 생성 실패 - 필요한 엔트로피 값이 너무 작습니다"
+ 
+ #: src/error.c:114 src/error.c:117
+ msgid "The password fails the dictionary check"
+-msgstr "암호는 사전 검사에 실패했습니다 "
++msgstr "암호 사전 검사에 실패했습니다"
+ 
+ #: src/error.c:120 src/error.c:124
+ msgid "Unknown setting"
+-msgstr "알 수 없는 설정 "
++msgstr "알 수 없는 설정"
+ 
+ #: src/error.c:127
+ msgid "Bad integer value of setting"
+-msgstr "설정에 대해 잘못된 정수 값 "
++msgstr "설정에 대해 잘못된 정수 값"
+ 
+ #: src/error.c:131
+ msgid "Bad integer value"
+-msgstr "잘못된 정수값 "
++msgstr "잘못된 정수값"
+ 
+ #: src/error.c:134
+ #, c-format
+ msgid "Setting %s is not of integer type"
+-msgstr "설정 %s은 정수 유형이 아닙니다 "
++msgstr "설정 %s은 정수 유형이 아닙니다"
+ 
+ #: src/error.c:138
+ msgid "Setting is not of integer type"
+-msgstr "설정이 정수 유형이 아닙니다 "
++msgstr "설정이 정수 유형이 아닙니다"
+ 
+ #: src/error.c:141
+ #, c-format
+ msgid "Setting %s is not of string type"
+-msgstr "설정 %s은 문자열 유형이 아닙니다 "
++msgstr "설정 %s은 문자열 유형이 아닙니다"
+ 
+ #: src/error.c:145
+ msgid "Setting is not of string type"
+-msgstr "설정은 문자열 유형이 아닙니다 "
++msgstr "설정은 문자열 유형이 아닙니다"
+ 
+ #: src/error.c:147
+ msgid "Opening the configuration file failed"
+-msgstr "설정 파일 열기에 실패했습니다 "
++msgstr "설정 파일 열기에 실패했습니다"
+ 
+ #: src/error.c:149
+ msgid "The configuration file is malformed"
+-msgstr "설정 파일이 잘못되었습니다 "
++msgstr "설정 파일이 잘못되었습니다"
+ 
+ #: src/error.c:151
+ msgid "Fatal failure"
+diff -up libpwquality-1.4.4/po/Makefile.in.in.rhel9-i18n libpwquality-1.4.4/po/Makefile.in.in
+--- libpwquality-1.4.4/po/Makefile.in.in.rhel9-i18n	2021-08-04 16:36:32.050503801 +0200
++++ libpwquality-1.4.4/po/Makefile.in.in	2021-08-04 16:37:17.722885954 +0200
+@@ -97,6 +97,7 @@ CATALOGS = @CATALOGS@
+ 
+ 
+ all: all-@USE_NLS@
++	$(MAKE) *.gmo
+ 
+ all-yes: stamp-po
+ all-no:
+diff -up libpwquality-1.4.4/po/zh_CN.po.rhel9-i18n libpwquality-1.4.4/po/zh_CN.po
+--- libpwquality-1.4.4/po/zh_CN.po.rhel9-i18n	2020-10-13 08:32:16.000000000 +0200
++++ libpwquality-1.4.4/po/zh_CN.po	2021-08-04 16:36:06.992294131 +0200
+@@ -11,13 +11,14 @@
+ # Xi HUANG <xhuang@redhat.com>, 2007.
+ # Tomáš Mráz <tmraz@fedoraproject.org>, 2017. #zanata
+ # Charles Lee <lchopn@gmail.com>, 2020.
++# Ludek Janda <ljanda@redhat.com>, 2021.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+ "Report-Msgid-Bugs-To: http://fedorahosted.org/libpwquality\n"
+ "POT-Creation-Date: 2020-10-13 08:32+0200\n"
+-"PO-Revision-Date: 2020-07-29 16:29+0000\n"
+-"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
++"PO-Revision-Date: 2021-05-26 14:02+0000\n"
++"Last-Translator: Ludek Janda <ljanda@redhat.com>\n"
+ "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+ "projects/libpwquality/app/zh_CN/>\n"
+ "Language: zh_CN\n"
+@@ -25,7 +26,7 @@ msgstr ""
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "Plural-Forms: nplurals=1; plural=0;\n"
+-"X-Generator: Weblate 4.1.1\n"
++"X-Generator: Weblate 4.6.2\n"
+ 
+ #: src/pam_pwquality.c:236
+ #, c-format
+@@ -70,7 +71,7 @@ msgstr "用法: %s <entropy-bits>\n"
+ #, c-format
+ msgid ""
+ "Warning: Value %ld is outside of the allowed entropy range, adjusting it.\n"
+-msgstr ""
++msgstr "警告： %ld 的值在允许的熵范围之外，需要调整它。\n"
+ 
+ #: src/error.c:31
+ msgid "Memory allocation error when setting"
