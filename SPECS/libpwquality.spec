@@ -1,7 +1,7 @@
 Summary: A library for password generation and password quality checking
 Name: libpwquality
 Version: 1.4.5
-Release: 12%{?dist}
+Release: 13%{?dist}
 URL: https://github.com/libpwquality/libpwquality/
 Source0: https://github.com/libpwquality/libpwquality/releases/download/libpwquality-%{version}/libpwquality-%{version}.tar.bz2
 
@@ -10,6 +10,7 @@ Source0: https://github.com/libpwquality/libpwquality/releases/download/libpwqua
 # https://bugzilla.redhat.com/2165572
 # Upstream PR: https://github.com/libpwquality/libpwquality/pull/74
 Patch1: setuptools.patch
+Patch2: allowed-character-classes.patch
 
 # The package is BSD licensed with option to relicense as GPLv2+
 # - this option is redundant as the BSD license allows that anyway.
@@ -24,6 +25,7 @@ BuildRequires: gcc make
 BuildRequires: cracklib-devel
 BuildRequires: gettext
 BuildRequires: pam-devel
+BuildRequires: /usr/bin/pod2man
 BuildRequires: python3-devel
 BuildRequires: python3-setuptools
 
@@ -105,6 +107,10 @@ mkdir %{buildroot}%{_secconfdir}/pwquality.conf.d
 %{python3_sitearch}/*.egg-info
 
 %changelog
+* Tue Jun 23 2026 Ganna Starovoytova <gstarovo@redhat.com> - 1.4.5-13
+- Adds allowing / disabling classes of characters
+  Resolves: RHEL-78718
+
 * Tue Oct 29 2024 Troy Dawson <tdawson@redhat.com> - 1.4.5-12
 - Bump release for October 2024 mass rebuild:
   Resolves: RHEL-64018
